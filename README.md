@@ -69,7 +69,7 @@ print transactionfee
 ```
 ![image](https://user-images.githubusercontent.com/12825358/71217030-12f26a80-22c5-11ea-9c65-6284cf2e33d6.png)
 
-### 2.1 Programa, kuri iš atitinkamos bloko header'io informacijos "patikrina", kad bloko hash'as yra teisingas. (buvo pasinaudota kai kurių kolegų idėjomis)
+### 2.1 Programa, kuri iš atitinkamos bloko header'io informacijos "patikrina", kad bloko hash'as yra teisingas.
 
 ```python
 from bitcoin.rpc import RawProxy
