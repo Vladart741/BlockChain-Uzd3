@@ -73,20 +73,16 @@ print transactionfee
 
 ```python
 from bitcoin.rpc import RawProxy
-
 import hashlib
 import binascii
 
 p = RawProxy()
-
 tx_value_out = 0
-
 tx_value_in = 0
 
 txid = raw_input("Enter a transaction id: ")
 
 raw_tx = p.getrawtransaction(txid)
-
 decoded_tx = p.decoderawtransaction(raw_tx)
 
 for output in decoded_tx['vin']:
@@ -100,12 +96,8 @@ for output in decoded_tx['vin']:
 
 for output2 in decoded_tx['vout']:
         tx_value_out = tx_value_out + output2['value']
-
-
-
+        
 print(tx_value_in - tx_value_out)
-
-#Check if block is valid
 
 blockheight = 277316
 
